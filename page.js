@@ -18,7 +18,8 @@ const componentTypesList = [
   'DynamicHtml',
   'InsetText',
   'Details',
-  'WarningText'
+  'WarningText',
+  'MojBanner'
 ]
 const componentTypes = componentTypesList.reduce((acc, name) => {
   acc[name] = require(`./components/${name.toLowerCase()}`)

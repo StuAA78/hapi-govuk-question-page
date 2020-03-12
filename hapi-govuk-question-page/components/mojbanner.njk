@@ -1,0 +1,7 @@
+{%- from "moj/components/banner/macro.njk" import mojBanner -%}
+
+{% macro MojBanner(component) %}
+  {{ mojBanner({
+    html: component.model.content
+  }) }}
+{% endmacro %}
