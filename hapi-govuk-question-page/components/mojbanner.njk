@@ -2,6 +2,7 @@
 
 {% macro MojBanner(component) %}
   {{ mojBanner({
-    html: component.model.content
+    html: component.model.content,
+    type: component.model.type
   }) }}
 {% endmacro %}

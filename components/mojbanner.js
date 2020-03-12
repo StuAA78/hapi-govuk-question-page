@@ -3,7 +3,8 @@ const { Component } = require('.')
 class MojBanner extends Component {
   getViewModel () {
     return {
-      content: this.content
+      content: this.content,
+      type: this.bannerType
     }
   }
 }

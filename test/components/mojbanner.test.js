@@ -7,7 +7,8 @@ const { expect } = Code
 const lab = exports.lab = Lab.script()
 
 const definition = {
-  content: 'Test content'
+  content: 'Test content',
+  bannerType: 'Test type'
 }
 
 lab.experiment('MojBanner', () => {
@@ -22,6 +23,9 @@ lab.experiment('MojBanner', () => {
     })
     lab.test('returns content', () => {
       expect(viewModel.content).to.equal('Test content')
+    })
+    lab.test('returns type', () => {
+      expect(viewModel.type).to.equal('Test type')
     })
   })
 })
